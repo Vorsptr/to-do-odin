@@ -4,8 +4,8 @@
   --text-color: #fff;
   --list-title-color: #292929;
   --list-background-color: #aaa;
-  --list-item-background-color: #2e417467;
-  --list-content-color: #2e41742a;
+  --list-item-background-color: #2e4174c7;
+  --list-content-color: #2e417465;
 }
 
 * {
@@ -45,6 +45,7 @@
   color: var(--text-color);
   font-weight: 700;
   cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.199);
 }
 
 .container {
