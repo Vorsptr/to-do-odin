@@ -1,0 +1,141 @@
+:root {
+  --main-color: #2e4174;
+  --header-color: #d9d9d9;
+  --text-color: #fff;
+  --list-title-color: #292929;
+  --list-background-color: #aaa;
+  --list-item-background-color: #2e417467;
+  --list-content-color: #2e41742a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  background-color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  color: var(--text-color);
+  padding: 0 40px;
+}
+
+.main-header label {
+  height: 40px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.199);
+}
+
+.btn {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 10px;
+  width: 75px;
+  height: 40px;
+  color: var(--text-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: calc(100vh - 80px);
+}
+
+.selection-menu {
+  background-color: var(--list-content-color);
+  display: grid;
+  position: relative;
+  justify-content: center;
+}
+
+.content {
+  background-color: var(--main-color);
+}
+
+.add-project {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+.menu {
+  margin-top: 20px;
+  width: 230px;
+  background-color: var(--header-color);
+  height: 45px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.menu-content {
+  position: absolute;
+  top: 50px;
+  width: 180px;
+  background-color: var(--list-background-color);
+  right: 0;
+  height: 300px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.menu-item {
+  height: 30px;
+  margin-top: 20px;
+  background-color: var(--list-item-background-color);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  color: var(--text-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.menu-item:last-child {
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.hidden {
+  display: none;
+}
